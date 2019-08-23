@@ -19,42 +19,31 @@ const input = {
     }],
     constraints: [{
         entity: "JD101",
-        group: undefined,
-        variable: undefined,
         operator: "max",
-        value: 90
+        value: 60
     }, {
         entity: "JD102",
-        group: undefined,
-        variable: undefined,
         operator: "max",
-        value: 90
+        value: 60
     }, {
         entity: "JD101",
-        group: undefined,
-        variable: undefined,
         operator: "min",
         value: 0
     }, {
         entity: "JD102",
-        group: undefined,
-        variable: undefined,
         operator: "min",
         value: 0
     }, {
-        entity: undefined,
         group: "0101",
         variable: "rendimento",
         operator: "min",
         value: 5000
     }, {
-        entity: undefined,
         group: "0102",
         variable: "rendimento",
         operator: "min",
         value: 4500
     }, {
-        entity: undefined,
         group: "0103",
         variable: "rendimento",
         operator: "min",
