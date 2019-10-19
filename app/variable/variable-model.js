@@ -1,15 +1,22 @@
 const mongoose = require('mongoose');
 
 const Variable = mongoose.model('Variable', {
-    code: {
+    identifier: {
         type: String,
-        required: true
+        require: true
     },
-    description: {
+    entity: {
         type: String,
-        required: true
+        require: true
     },
-    value: Object
+    value: {
+        type: Number,
+        require: true
+    },
+    problemId: {
+        type: String,
+        require: true
+    }
 }, 'variable');
 
 module.exports = Variable;

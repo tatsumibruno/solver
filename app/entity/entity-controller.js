@@ -1,9 +1,8 @@
 const Entity = require('./entity-model');
 
-function EntityController() {
+const controller = {
+    
 }
-
-const controller = EntityController.prototype;
 
 controller.create = function(req, res) {
     Entity.create(req.body)
@@ -20,4 +19,4 @@ controller.get = function(req, res) {
     });
 };
 
-module.exports = EntityController;
+module.exports = controller;

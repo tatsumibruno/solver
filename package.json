@@ -2,8 +2,9 @@
   "name": "solver",
   "version": "0.0.1",
   "description": "API to resolve Linear Programming Functions",
-  "main": "./src/server.js",
+  "main": "./app/server.js",
   "scripts": {
+    "start": "node ./app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

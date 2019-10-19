@@ -1,6 +1,7 @@
 const solver = require("javascript-lp-solver/src/solver");
 
 const input = {
+    //entidades
     entities: [{
         identifier: "JD101",
         increment: 1,
@@ -10,6 +11,7 @@ const input = {
         increment: 1,
         integer: true
     }],
+    //agrupadores
     groups: [{
         identifier: "0101"
     }, {
@@ -17,6 +19,7 @@ const input = {
     }, {
         identifier: "0103"
     }],
+    //restrições
     constraints: [{
         entity: "JD101",
         operator: "max",
@@ -49,6 +52,7 @@ const input = {
         operator: "min",
         value: 8000
     }],
+    //variáveis
     variables: [{
         identifier: "rendimento",
         entity: "JD101",
@@ -66,6 +70,7 @@ const input = {
         entity: "JD102",
         value: 38 * 10
     }],
+    //objetivo
     objective: {
         variableToOptimize: "custo",
         optimizeType: "min"
